@@ -1,11 +1,17 @@
 module.exports = class {
 	constructor(name) {
 		this.name = name;
-		console.log(process.cwd() + " fuck " + name + "!")
+		let { 0: a, [name.length - 1]: b } = name;
+		[a, b] = [b, a];
+		let s = `
+<ul>${[a, b].map(c => `
+<li>${c}</li>`).join("")}
+</ul>`;
+		console.log(`${process.cwd()} fuck ${s}`);
 	}
 	read(file) {
 		var fs = require("fs");
-		fs.stat(file, function(err, stat) {
+		fs.stat(file, function (err, stat) {
 			if (err) {
 				console.log(err);
 			} else {
