@@ -1,4 +1,4 @@
-##Node 学习笔记
+## Node 学习笔记
 1. 熟悉 VSCode，功能操作，快捷键。
    参考链接：https://www.gitbook.com/book/jeasonstudio/vscode-cn-doc/details
 2. 学习 ES6，新语法，新功能。
