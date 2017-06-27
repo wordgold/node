@@ -7,7 +7,9 @@ module.exports = class {
 <ul>${[a, b].map(c => `
 <li>${c}</li>`).join("")}
 </ul>`;
-		console.log(`${process.cwd()} fuck ${s}`);
+		console.log(`${process.cwd()} fuck ${s}!`);
+		console.log(new Array(3).fill('<li></li>').join(""));
+		console.log(Array.from('𠮷123test测试', x => x.codePointAt()).copyWithin(1, 3, 4).join("-"));
 	}
 	read(file) {
 		var fs = require("fs");
